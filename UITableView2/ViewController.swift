@@ -40,9 +40,9 @@ class ViewController: UIViewController, MKMapViewDelegate{
         ]
     }
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        <#code#>
+        var names = mapView.dequeueReusableAnnotationView(withIdentifier: "IDCell", for: )
    
-    
+    return names
     }
      
     }
