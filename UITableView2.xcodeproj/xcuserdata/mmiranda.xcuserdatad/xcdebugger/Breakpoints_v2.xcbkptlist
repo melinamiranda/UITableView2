@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "668D7CF7-7D67-49AC-AF9C-E9331E7280E6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E0B818F-523A-4E6F-9980-45554179657D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UITableView2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "name"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2868C04F-8FDE-44FD-8F3E-21C95BC65341"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UITableView2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "name"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "2868C04F-8FDE-44FD-8F3E-21C95BC65341 - 53652b50f1086b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView2.ViewController.mapView.getter : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "UITableView2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mmiranda/Documents/repositories/UITableView2/UITableView2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2868C04F-8FDE-44FD-8F3E-21C95BC65341 - cfda4cf3c13ab2c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView2.ViewController.mapView.setter : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "UITableView2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mmiranda/Documents/repositories/UITableView2/UITableView2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "2868C04F-8FDE-44FD-8F3E-21C95BC65341 - 45862d0f3c006bb1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView2.ViewController.mapView.modify : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "UITableView2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mmiranda/Documents/repositories/UITableView2/UITableView2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "2868C04F-8FDE-44FD-8F3E-21C95BC65341 - 5320d08c3d8a0f6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView2.ViewController.mapView.modify : Swift.Optional&lt;__C.MKMapView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "UITableView2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mmiranda/Documents/repositories/UITableView2/UITableView2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "2868C04F-8FDE-44FD-8F3E-21C95BC65341 - 5398518e63b2139b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView2.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; UITableView2.ViewController"
+                  moduleName = "UITableView2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mmiranda/Documents/repositories/UITableView2/UITableView2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "579">
+               </Location>
+               <Location
+                  uuid = "2868C04F-8FDE-44FD-8F3E-21C95BC65341 - 81c337f8f270236d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView2.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;UITableView2.ViewController&gt;"
+                  moduleName = "UITableView2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mmiranda/Documents/repositories/UITableView2/UITableView2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "511">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
