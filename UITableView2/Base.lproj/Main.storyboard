@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qIO-eh-eeg">
-                                                    <rect key="frame" x="182" y="9" width="212" height="105"/>
+                                                    <rect key="frame" x="223" y="9" width="171" height="92"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="qb5-56-kGm" id="9DZ-mn-FfJ"/>
