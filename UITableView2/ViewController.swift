@@ -49,6 +49,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 City.init(countryName: "Ireland", cityName: "Dublin", latitude: 53.4064294, longitude:-6.2871015),
                                                                          
                 City.init(countryName: "Scotland, UK", cityName: "Edinburgh", latitude: 55.953251, longitude:  -3.188267),
+                
+                City.init(countryName: "Germany", cityName: "Berlin", latitude: 52.5122100, longitude: 13.3269700)
                                        
     ]
         
