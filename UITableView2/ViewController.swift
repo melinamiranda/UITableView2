@@ -22,6 +22,7 @@ struct City {
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate {
    
    
+   
     @IBOutlet weak var tableView: UITableView!
     
     var cities = [City]()
@@ -52,7 +53,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     ]
         
         tableView.rowHeight = 110
-      
+        
+        
     }
     
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,13 +66,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             let cell = tableView.dequeueReusableCell(withIdentifier: "CityTableViewCell", for: indexPath) as! CityTableViewCell
             
-            cell.showCity(city: City(countryName: cities[indexPath.row].countryName, cityName: cities[indexPath.row].cityName, latitude: cities[indexPath.row].latitude, longitude: cities[indexPath.row].longitude))
             
-            cell.mapView.dequeueReusableAnnotationView(withIdentifier: "CityTableViewCell") as? CityTableViewCell
+            cell.showCity(city: City(countryName: cities[indexPath.row].countryName, cityName: cities[indexPath.row].cityName, latitude: cities[indexPath.row].latitude, longitude: cities[indexPath.row].longitude))
+           
+            
             cell.cityName.text = cities[indexPath.row].cityName
             cell.countryName.text = cities[indexPath.row].countryName
-            
             return cell
            }
-        
-    }
+
+}

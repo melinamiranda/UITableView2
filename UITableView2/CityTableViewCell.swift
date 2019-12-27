@@ -15,8 +15,12 @@ class CityTableViewCell: UITableViewCell, MKMapViewDelegate{
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var cityName: UILabel!
     @IBOutlet weak var countryName: UILabel!
+    
+  override func prepareForReuse() {
+        super.prepareForReuse()
 
-
+    mapView.removeAnnotations(mapView.annotations)
+    }
     func showCity(city: City){
         
         let center = CLLocationCoordinate2DMake(city.latitude, city.longitude)
@@ -28,12 +32,16 @@ class CityTableViewCell: UITableViewCell, MKMapViewDelegate{
         annotations.coordinate = CLLocationCoordinate2DMake(city.latitude, city.longitude)
         annotations.title = city.cityName
         annotations.subtitle = city.countryName
+        
         mapView.addAnnotation(annotations)
+         }
+    
+}
+    
+         
         
-        }
+        
 
-        
-   
-    }
+    
 
 
