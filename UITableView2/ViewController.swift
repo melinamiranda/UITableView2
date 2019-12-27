@@ -73,6 +73,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
            
             
             cell.cityName.text = cities[indexPath.row].cityName
+            cell.cityName.textColor = .blue
+            cell.countryName.textColor = .blue
             cell.countryName.text = cities[indexPath.row].countryName
             return cell
            }
