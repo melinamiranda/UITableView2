@@ -10,10 +10,9 @@ import Foundation
 import UIKit
 import MapKit
 
-class CityTableViewCell: UITableViewCell, MKMapViewDelegate{
+class CityTableViewCell:  UITableViewCell, MKMapViewDelegate{
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var countryName: UILabel!
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         mapView.removeAnnotations(mapView.annotations)
@@ -28,6 +27,8 @@ class CityTableViewCell: UITableViewCell, MKMapViewDelegate{
         annotations.title = city.cityName
         annotations.subtitle = city.countryName
         mapView.addAnnotation(annotations)
+    
+        
     }
 }
     
