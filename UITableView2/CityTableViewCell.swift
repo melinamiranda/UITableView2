@@ -15,6 +15,7 @@ class CityTableViewCell:  UITableViewCell, MKMapViewDelegate{
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var countryName: UILabel!
     @IBOutlet weak var imageCity: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -32,14 +33,15 @@ class CityTableViewCell:  UITableViewCell, MKMapViewDelegate{
         annotations.title = city.cityName
         annotations.subtitle = city.countryName
         mapView.addAnnotation(annotations)
-      
+        activityIndicator.startAnimating()
         DispatchQueue.global().async {
               let url = URL(string: city.urlImage)
                if let data = try? Data(contentsOf: url!){
                   DispatchQueue.main.async {
                     self.imageCity.image =  UIImage(data: data)
-                      }
-                  }
+                    self.activityIndicator.stopAnimating()
+                    }
+                }
             }
         countryName.text = city.cityName + ", " + city.countryName
         textCity.text = city.text
