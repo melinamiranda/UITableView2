@@ -44,7 +44,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             City.init(countryName: "Scotland, UK", cityName: "Edinburgh", latitude: 55.953251, longitude:  -3.188267, text: "Edinburgh is the capital of Scotland and one of its 32 council areas. Historically part of the county of Midlothian, it is located in Lothian on the Firth of Forth's southern shore.",urlImage: "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Shore%2C_Leith.JPG"),
         ]
-        tableView.rowHeight = 200
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
