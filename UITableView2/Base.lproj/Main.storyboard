@@ -26,9 +26,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="I9j-cc-IsK">
-                                                    <rect key="frame" x="-139" y="144" width="50" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="I9j-cc-IsK">
+                                                    <rect key="frame" x="290" y="48" width="116" height="116"/>
                                                 </activityIndicatorView>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-kS-12O">
                                                     <rect key="frame" x="8" y="8" width="156" height="156"/>
@@ -36,26 +35,26 @@
                                                         <constraint firstAttribute="width" secondItem="gVs-kS-12O" secondAttribute="height" multiplier="1:1" id="6cc-qv-ij7"/>
                                                     </constraints>
                                                 </mapView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-YT-mR9" userLabel="Stack View V">
-                                                    <rect key="frame" x="170" y="8" width="200" height="156"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-YT-mR9" userLabel="Stack View V">
+                                                    <rect key="frame" x="170" y="8" width="236" height="156"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="City, Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B6-zD-HZL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="236" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ias-jO-jsU" userLabel="Stack View H">
-                                                            <rect key="frame" x="0.0" y="58" width="200" height="98"/>
+                                                            <rect key="frame" x="0.0" y="40" width="236" height="116"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fch-6d-svp">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="116"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gh7-Fr-mCW">
-                                                                    <rect key="frame" x="102" y="0.0" width="98" height="98"/>
+                                                                    <rect key="frame" x="120" y="0.0" width="116" height="116"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="Gh7-Fr-mCW" secondAttribute="height" multiplier="1:1" id="1Fd-xc-PI8"/>
                                                                     </constraints>
@@ -68,11 +67,15 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="KQg-YT-mR9" secondAttribute="bottom" constant="8" id="Jy2-MI-gP0"/>
                                                 <constraint firstItem="KQg-YT-mR9" firstAttribute="leading" secondItem="SBa-br-hSV" secondAttribute="leading" constant="170" id="Tiz-I5-9BC"/>
+                                                <constraint firstItem="I9j-cc-IsK" firstAttribute="leading" secondItem="Gh7-Fr-mCW" secondAttribute="leading" id="fC6-py-7nM"/>
+                                                <constraint firstItem="I9j-cc-IsK" firstAttribute="top" secondItem="Gh7-Fr-mCW" secondAttribute="top" id="fOz-BA-WAy"/>
                                                 <constraint firstItem="gVs-kS-12O" firstAttribute="top" secondItem="SBa-br-hSV" secondAttribute="top" constant="8" id="h87-lc-7Jf"/>
+                                                <constraint firstItem="I9j-cc-IsK" firstAttribute="trailing" secondItem="Gh7-Fr-mCW" secondAttribute="trailing" id="jz4-jG-0Zt"/>
+                                                <constraint firstItem="I9j-cc-IsK" firstAttribute="bottom" secondItem="Gh7-Fr-mCW" secondAttribute="bottom" id="lzK-Oh-C7w"/>
                                                 <constraint firstAttribute="bottom" secondItem="gVs-kS-12O" secondAttribute="bottom" constant="8" id="m2d-I0-Lfd"/>
                                                 <constraint firstItem="KQg-YT-mR9" firstAttribute="top" secondItem="SBa-br-hSV" secondAttribute="top" constant="8" id="p6m-cF-LAJ"/>
                                                 <constraint firstItem="gVs-kS-12O" firstAttribute="leading" secondItem="SBa-br-hSV" secondAttribute="leading" constant="8" id="rHo-5h-D8x"/>
-                                                <constraint firstAttribute="trailing" secondItem="KQg-YT-mR9" secondAttribute="trailing" constant="44" id="wiw-Ul-bFS"/>
+                                                <constraint firstAttribute="trailing" secondItem="KQg-YT-mR9" secondAttribute="trailing" constant="8" id="wiw-Ul-bFS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="CityTableViewCell"/>
