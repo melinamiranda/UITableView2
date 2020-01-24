@@ -19,56 +19,53 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="CityTableViewCell" rowHeight="192" id="qb5-56-kGm" customClass="CityTableViewCell" customModule="UITableView2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="192"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="CityTableViewCell" id="qb5-56-kGm" customClass="CityTableViewCell" customModule="UITableView2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="156.66667175292969"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="qb5-56-kGm" id="SBa-br-hSV">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156.66667175292969"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="I9j-cc-IsK">
-                                                    <rect key="frame" x="343" y="97" width="20" height="20"/>
+                                                    <rect key="frame" x="371.66666666666669" y="80.333333333333329" width="20" height="20"/>
                                                 </activityIndicatorView>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-kS-12O">
-                                                    <rect key="frame" x="8.0000000000000071" y="8.0000000000000071" width="121.66666666666669" height="121.66666666666669"/>
+                                                    <rect key="frame" x="8" y="8" width="140.33333333333334" height="140.33333333333334"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="gVs-kS-12O" secondAttribute="height" multiplier="1:1" id="De4-wu-xf6"/>
                                                     </constraints>
                                                 </mapView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-YT-mR9" userLabel="Stack View V">
-                                                    <rect key="frame" x="137.66666666666666" y="8" width="268.33333333333337" height="176"/>
+                                                    <rect key="frame" x="156.33333333333337" y="8" width="249.66666666666663" height="140.66666666666666"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="City, Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B6-zD-HZL">
-                                                            <rect key="frame" x="92.333333333333343" y="0.0" width="84" height="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="City, Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B6-zD-HZL">
+                                                            <rect key="frame" x="54.666666666666657" y="0.0" width="140.66666666666666" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ias-jO-jsU" userLabel="Stack View H">
-                                                            <rect key="frame" x="0.0" y="22" width="268.33333333333331" height="154"/>
+                                                            <rect key="frame" x="-5" y="23.666666666666671" width="259.66666666666669" height="117.00000000000001"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fch-6d-svp">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="Fch-6d-svp" secondAttribute="height" multiplier="1:1" id="nRs-BK-OH5"/>
-                                                                    </constraints>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fch-6d-svp">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="193.33333333333334" height="117"/>
                                                                     <string key="text">Edinburgh is the capital of Scotland and one of its 32 council areas. Historically part of the county of Midlothian, it is located in Lothian on the Firth of Forth's southern shore.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="Gh7-Fr-mCW">
-                                                                    <rect key="frame" x="162.00000000000003" y="0.0" width="106.33333333333334" height="154"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gh7-Fr-mCW">
+                                                                    <rect key="frame" x="201.33333333333334" y="0.0" width="58.333333333333343" height="117"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="Gh7-Fr-mCW" secondAttribute="height" multiplier="1:1" id="1Fd-xc-PI8"/>
+                                                                        <constraint firstAttribute="width" secondItem="Gh7-Fr-mCW" secondAttribute="height" multiplier="1:2" id="1Fd-xc-PI8"/>
                                                                     </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="Fch-6d-svp" firstAttribute="width" secondItem="KQg-YT-mR9" secondAttribute="height" multiplier="7:8" id="5MK-Gy-tul"/>
+                                                        <constraint firstItem="3B6-zD-HZL" firstAttribute="width" secondItem="KQg-YT-mR9" secondAttribute="height" multiplier="1:1" id="RgX-Q4-9ML"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
@@ -76,10 +73,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="gVs-kS-12O" secondAttribute="bottom" constant="8" id="Aob-o7-VDd"/>
                                                 <constraint firstItem="I9j-cc-IsK" firstAttribute="centerX" secondItem="Gh7-Fr-mCW" secondAttribute="centerX" id="CQv-CI-Ppx"/>
                                                 <constraint firstAttribute="bottom" secondItem="KQg-YT-mR9" secondAttribute="bottom" constant="8" id="Jy2-MI-gP0"/>
+                                                <constraint firstItem="ias-jO-jsU" firstAttribute="width" secondItem="SBa-br-hSV" secondAttribute="height" multiplier="300:181" id="L0b-Xb-33X"/>
                                                 <constraint firstItem="I9j-cc-IsK" firstAttribute="centerY" secondItem="Gh7-Fr-mCW" secondAttribute="centerY" id="RPL-SJ-gZc"/>
                                                 <constraint firstItem="KQg-YT-mR9" firstAttribute="leading" secondItem="gVs-kS-12O" secondAttribute="trailing" constant="8" id="TZo-XD-Qvo"/>
                                                 <constraint firstItem="gVs-kS-12O" firstAttribute="top" secondItem="SBa-br-hSV" secondAttribute="top" constant="8" id="Ybl-cN-z4b"/>
-                                                <constraint firstAttribute="width" secondItem="gVs-kS-12O" secondAttribute="height" multiplier="136:40" id="fFg-Y6-dCQ"/>
+                                                <constraint firstAttribute="width" secondItem="gVs-kS-12O" secondAttribute="height" multiplier="118:40" id="fFg-Y6-dCQ"/>
                                                 <constraint firstItem="KQg-YT-mR9" firstAttribute="top" secondItem="SBa-br-hSV" secondAttribute="top" constant="8" id="p6m-cF-LAJ"/>
                                                 <constraint firstItem="gVs-kS-12O" firstAttribute="leading" secondItem="SBa-br-hSV" secondAttribute="leading" constant="8" id="rHo-5h-D8x"/>
                                                 <constraint firstItem="gVs-kS-12O" firstAttribute="centerY" secondItem="SBa-br-hSV" secondAttribute="centerY" id="wDJ-5N-HvY"/>
@@ -87,6 +85,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="CityTableViewCell"/>
+                                        <constraints>
+                                            <constraint firstItem="KQg-YT-mR9" firstAttribute="centerY" secondItem="qb5-56-kGm" secondAttribute="centerY" id="Abq-DV-d1c"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="activityIndicator" destination="I9j-cc-IsK" id="Hpi-RD-sWF"/>
                                             <outlet property="countryName" destination="3B6-zD-HZL" id="pCe-9X-duJ"/>
