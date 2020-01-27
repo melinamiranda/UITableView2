@@ -44,16 +44,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             City.init(countryName: "Scotland, UK", cityName: "Edinburgh", latitude: 55.953251, longitude:  -3.188267, text: "Edinburgh is the capital of Scotland and one of its 32 council areas. Historically part of the county of Midlothian, it is located in Lothian on the Firth of Forth's southern shore.",urlImage: "https://upload.wikimedia.org/wikipedia/commons/2/28/The_Shore%2C_Leith.JPG"),
         ]
-        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cities.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CityTableViewCell", for: indexPath) as! CityTableViewCell
+        
         cell.showCity(city: cities[indexPath.row])
       
         return cell
     }
-
 }
