@@ -19,10 +19,11 @@ class CityTableViewCell:  UITableViewCell, MKMapViewDelegate{
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        
         mapView.removeAnnotations(mapView.annotations)
     }
+    
     func showCity(city: City){
-        textCity.numberOfLines = 20
         let center = CLLocationCoordinate2DMake(city.latitude, city.longitude)
         let span = MKCoordinateSpan(latitudeDelta: 4, longitudeDelta: 4)
         let region = MKCoordinateRegion(center: center, span: span)
@@ -36,14 +37,14 @@ class CityTableViewCell:  UITableViewCell, MKMapViewDelegate{
         activityIndicator.startAnimating()
         imageCity.image = UIImage()
         DispatchQueue.global().async {
-              let url = URL(string: city.urlImage)
-               if let data = try? Data(contentsOf: url!){
-                  DispatchQueue.main.async {
+            let url = URL(string: city.urlImage)
+            if let data = try? Data(contentsOf: url!){
+                DispatchQueue.main.async {
                     self.imageCity.image =  UIImage(data: data)
                     self.activityIndicator.stopAnimating()
-                    }
                 }
             }
+        }
         countryName.text = city.cityName + ", " + city.countryName
         textCity.text = city.text
     }
