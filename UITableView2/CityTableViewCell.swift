@@ -33,8 +33,8 @@ class CityTableViewCell:  UITableViewCell, MKMapViewDelegate{
         annotations.title = city.cityName
         annotations.subtitle = city.countryName
         mapView.addAnnotation(annotations)
-        imageCity.image = UIImage()
         activityIndicator.startAnimating()
+        imageCity.image = UIImage()
         DispatchQueue.global().async {
               let url = URL(string: city.urlImage)
                if let data = try? Data(contentsOf: url!){
